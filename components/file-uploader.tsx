@@ -12,7 +12,7 @@ import {
 
 const FileUploader = () => {
   const onDrop = useCallback((acceptedFiles: File[]) => {
-    // Do something with the files
+    console.log(acceptedFiles)
   }, []);
   const { getRootProps, getInputProps, isDragActive, isDragAccept } =
     useDropzone({
